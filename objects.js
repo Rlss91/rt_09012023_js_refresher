@@ -3,6 +3,9 @@ let obj = {
   age: 8,
 };
 
+let { name } = obj;
+//let name = obj.name
+
 let obj2 = obj;
 
 obj2.age = 10;

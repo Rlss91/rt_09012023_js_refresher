@@ -3,3 +3,9 @@ apis
 axios!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 create web site to display all Rick and Morty characters
+
+query selector
+
+configure studio code
+
+hw
