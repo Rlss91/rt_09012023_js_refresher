@@ -1,6 +1,4 @@
-postman
-apis
-axios!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+https://docs.google.com/presentation/d/1IXp72nA6ZL-L_katvn5ZHhp3Y_lSc2X3X59mvoSJsX4/edit#slide=id.g1c963e0c999_0_145
 
 create web site to display all Rick and Morty characters
 
@@ -8,4 +6,6 @@ query selector
 
 configure studio code
 
-hw
+classes*
+
+do hw
