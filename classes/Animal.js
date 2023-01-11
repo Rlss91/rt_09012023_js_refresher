@@ -1,4 +1,7 @@
 class Animal {
+  static isAnimal(animal) {
+    return animal instanceof Animal;
+  }
   name;
   age;
   color;
@@ -53,6 +56,8 @@ printAnimal(dog);
 printAnimal(dolphin);
 printAnimal();
 printAnimal({});
+
+console.log("is animal", Animal.isAnimal(dog));
 
 /*
     let d = {
