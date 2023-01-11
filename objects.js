@@ -54,3 +54,14 @@ let array = [
 ];
 
 let array2 = JSON.parse(JSON.stringify(array)); //deep copy
+
+let salt = 100;
+let sugar = 100;
+let supplies = {
+  salt,
+  sugar,
+};
+// let supplies = {
+//   salt: salt,
+//   sugar: sugar,
+// };

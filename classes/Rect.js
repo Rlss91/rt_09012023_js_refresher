@@ -1,13 +1,12 @@
+import Point from "./Point.js";
 class Rect {
-  x;
-  y;
+  point;
   #w; // private
   #h; // private
   #a; //area - private
   #p; //per - private
-  constructor(x, y, w, h) {
-    this.x = x;
-    this.y = y;
+  constructor(point, w, h) {
+    this.point = point;
     this.#w = w;
     this.#h = h;
     this.#a = this.calcArea();
@@ -27,19 +26,35 @@ class Rect {
     this.#a = this.calcArea();
     this.#p = this.calcPer();
   }
+  set h(height) {
+    if (height < 0) {
+      return;
+    }
+    this.#h = height;
+    this.#a = this.calcArea();
+    this.#p = this.calcPer();
+  }
   get w() {
     return this.#w;
+  }
+  get h() {
+    return this.#h;
   }
   get a() {
     return this.#a;
   }
+  get p() {
+    return this.#p;
+  }
 }
 
-const rect = new Rect(0, 0, 5, 5);
+const rect = new Rect(new Point(0, 0), 5, 5);
 /*
     let rect = {
-        x:0,
-        y:0,
+        point:{
+            x:0,
+            y:0
+        },
         w:5,
         h:5,
         calcArea: ()=>{
@@ -56,7 +71,7 @@ rect.w = 10;
 // rect.p = rect.calcPer();
 // rect.a = rect.calcArea();
 console.log("a", rect.a);
-rect.a = 100;
+// rect.a = 100;
 console.log("🚀 ~ file: Rect.js:42 ~ rect", rect);
 
-const rect2 = new Rect(0, 0, 10, 5);
+//const rect2 = new Rect(0, 0, 10, 5);
